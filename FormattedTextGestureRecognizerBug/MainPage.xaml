@@ -6,7 +6,9 @@
              x:DataType="local:MainPageViewModel">
     <VerticalStackLayout HorizontalOptions="Start" Spacing="10">
 
-        <Label Text="{Binding TapCount, StringFormat='Number of recognized taps: {0}'}" FontAttributes="Bold" />
+        <Label Text="{Binding TapCount, StringFormat='Number of recognized taps: {0}'}" FontSize="30" FontAttributes="Bold" />
+        
+        <Label Text="Single line, progressively limited width:" FontSize="20" FontAttributes="Bold" />
 
         <Label HorizontalOptions="Start" MaxLines="1" BackgroundColor="LightCyan" WidthRequest="600">
             <Label.FormattedText>
@@ -63,10 +65,79 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
-        <Label HorizontalOptions="Start" MaxLines="1" BackgroundColor="LightCyan" WidthRequest="100">
+
+        <Label Text="Limited width, progressively limited lines:" FontSize="20" FontAttributes="Bold" />
+
+        <Label HorizontalOptions="Start" MaxLines="7" BackgroundColor="LightGoldenrodYellow" WidthRequest="100">
             <Label.FormattedText>
                 <FormattedString>
-                    <Span Text="Only our WidthRequests differ. Otherwise we're the same. Please tap us!">
+                    <Span Text="Only our MaxLines differ. Otherwise we're the same. Please tap us!">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label HorizontalOptions="Start" MaxLines="6" BackgroundColor="LightGoldenrodYellow" WidthRequest="100">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Only our MaxLines differ. Otherwise we're the same. Please tap us!">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label HorizontalOptions="Start" MaxLines="5" BackgroundColor="LightGoldenrodYellow" WidthRequest="100">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Only our MaxLines differ. Otherwise we're the same. Please tap us!">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label HorizontalOptions="Start" MaxLines="4" BackgroundColor="LightGoldenrodYellow" WidthRequest="100">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Only our MaxLines differ. Otherwise we're the same. Please tap us!">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label HorizontalOptions="Start" MaxLines="3" BackgroundColor="LightGoldenrodYellow" WidthRequest="100">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Only our MaxLines differ. Otherwise we're the same. Please tap us!">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label HorizontalOptions="Start" MaxLines="2" BackgroundColor="LightGoldenrodYellow" WidthRequest="100">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Only our MaxLines differ. Otherwise we're the same. Please tap us!">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label HorizontalOptions="Start" MaxLines="1" BackgroundColor="LightGoldenrodYellow" WidthRequest="100">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Only our MaxLines differ. Otherwise we're the same. Please tap us!">
                         <Span.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding TapCommand}" />
                         </Span.GestureRecognizers>
